@@ -9,8 +9,8 @@ export class AppComponent {
     { title: 'Lister og Persistent Data', url: '/folder/List', icon: 'list' },
     { title: 'Sensor/Geolocation', url: '/folder/Geolocation', icon: 'globe' },
     { title: 'Orientation', url: '/folder/Orientation', icon: 'phone-landscape' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
+    { title: 'Draggable', url: '/folder/Draggable', icon: 'move' },
+    { title: 'Programmed Movement', url: '/folder/p-movement', icon: 'bicycle' },
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
   constructor() {}

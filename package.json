@@ -29,7 +29,9 @@
     "@ionic-native/geolocation": "^5.36.0",
     "@ionic-native/gyroscope": "^5.36.0",
     "@ionic/angular": "^6.1.9",
+    "@ionic/cordova-builders": "^7.0.0",
     "component": "^1.1.0",
+    "cordova-android": "10.1.2",
     "ionicons": "^6.0.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
@@ -53,9 +55,15 @@
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
     "autoprefixer": "^10.4.12",
+    "cordova-plugin-device": "2.0.2",
     "cordova-plugin-geolocation": "^4.1.0",
     "cordova-plugin-gyroscope": "^0.1.4",
+    "cordova-plugin-ionic-keyboard": "^2.0.5",
+    "cordova-plugin-ionic-webview": "^5.0.0",
     "cordova-plugin-screen-orientation": "^3.0.2",
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
+    "es6-promise-plugin": "^4.2.2",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -80,7 +88,15 @@
       "cordova-plugin-geolocation": {
         "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
       },
-      "cordova-plugin-screen-orientation": {}
-    }
+      "cordova-plugin-screen-orientation": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {}
+    },
+    "platforms": [
+      "android"
+    ]
   }
 }

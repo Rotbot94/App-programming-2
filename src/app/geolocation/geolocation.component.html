@@ -1,0 +1,9 @@
+<div class="flex flex-col ion-align-items-center">
+  <button class="mt-10 btn bg-blue-400 p-2 rounded-full" (click)="getLocation()">Get Location</button>
+  <ng-container *ngIf="longtitude && latitude">
+    <div class="mt-5">
+      <p>Latitude is {{latitude}}</p>
+      <p>Longtitude is {{longtitude}}</p>
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,7 @@
+<div [ngClass]="orientation === 'landscape-primary' ? 'bg-red-900' : 'bg-blue-900'"  class=" h-[100%] flex flex-col ion-align-items-center">
+  <p class="mt-10">The color of this page will change depending on the orientation of the device</p>
+  <button class="mt-10 btn bg-blue-400 p-2 rounded-full" (click)="getCurrentOrientation()">Get Orientation</button>
+  <ng-container *ngIf="orientation && orientation !== ''">
+    <p class="mt-5">{{orientation}}</p>
+  </ng-container>
+</div>

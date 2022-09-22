@@ -6,9 +6,11 @@ import { FolderPageRoutingModule } from './folder-routing.module';
 import { FolderPage } from './folder.page';
 import {ListComponent} from '../list/list.component';
 import {GeolocationComponent} from '../geolocation/geolocation.component';
-import { Geolocation } from '@ionic-native/geolocation/ngx';
 import {OrientationComponent} from '../orientation/orientation.component';
 import {ScreenOrientation} from '@awesome-cordova-plugins/screen-orientation/ngx';
+import {DraggableComponent} from '../draggable/draggable.component';
+import {Geolocation} from '@ionic-native/geolocation/ngx';
+import {PMovementComponent} from '../p-movement/p-movement.component';
 
 @NgModule({
   imports: [
@@ -17,7 +19,7 @@ import {ScreenOrientation} from '@awesome-cordova-plugins/screen-orientation/ngx
     IonicModule,
     FolderPageRoutingModule
   ],
-  declarations: [FolderPage, ListComponent, GeolocationComponent, OrientationComponent],
+  declarations: [FolderPage, ListComponent, GeolocationComponent, OrientationComponent, DraggableComponent, PMovementComponent],
   providers: [Geolocation, ScreenOrientation]
 })
 export class FolderPageModule {}

@@ -1,0 +1,15 @@
+<div class="flex flex-col ion-align-items-center">
+  <ng-container class="mt-4" *ngIf="list?.length > 0; else noList">
+    <ng-container *ngFor="let l of list">
+      <li (click)="removeListItem(l)" class="hover:line-through">{{l[1]}}</li>
+    </ng-container>
+  </ng-container>
+
+  <ng-template #noList>
+    <div class="mt-8">Dynamic list is currently empty</div>
+  </ng-template>
+  <div class="mt-5">
+    <input class="w-[50%] mr-4 rounded-xl p-2" type="text" [(ngModel)]="newListItem" placeholder="Enter text">
+    <button (click)="saveListItem()" class="btn bg-blue-400 p-2 rounded-full" type="submit">Add</button>
+  </div>
+</div>
