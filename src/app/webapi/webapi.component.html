@@ -1,0 +1,22 @@
+<div class="mt-10 flex flex-col ion-align-items-center">
+  <p>Retrieve info about a Pokémon of your choosing!</p>
+  <label for="name">Enter the name of the Pokémon:
+    <input [(ngModel)]="pokemonName" id="name" class="mt-5 rounded-xl p-2" type="text">
+  </label>
+  <button class="mt-5 btn bg-blue-400 p-2 rounded-full" (click)="getPokemonInfo()">Get info!</button>
+</div>
+<ng-container *ngIf="pokemon">
+  <div class="mt-10 flex flex-col ion-align-items-center">
+    <p>Name: {{pokemon?.name | titlecase}}</p>
+    <p>ID:{{pokemon?.id}}</p>
+    <img src="{{pokemon?.sprites?.front_default}}">
+    <p>Types:</p>
+    <div class="flex flex-row">
+      <ng-container *ngFor="let type of pokemon?.types">
+        <p class="pr-1">{{type?.type?.name | titlecase}}</p>
+      </ng-container>
+    </div>
+    <p>Characteristics: </p>
+    <p class="text-center">{{pokemonSpecies?.flavor_text_entries[0]?.flavor_text}}</p>
+  </div>
+</ng-container>
