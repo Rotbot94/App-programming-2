@@ -3,7 +3,6 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-webapi',
   templateUrl: './webapi.component.html',
-  styleUrls: ['./webapi.component.scss'],
 })
 export class WebapiComponent {
 
