@@ -11,6 +11,8 @@ import {ScreenOrientation} from '@awesome-cordova-plugins/screen-orientation/ngx
 import {DraggableComponent} from '../draggable/draggable.component';
 import {Geolocation} from '@ionic-native/geolocation/ngx';
 import {PMovementComponent} from '../p-movement/p-movement.component';
+import {CombinedComponent} from '../combined/combined.component';
+import { Shake } from '@ionic-native/shake/ngx';
 
 @NgModule({
   imports: [
@@ -19,7 +21,7 @@ import {PMovementComponent} from '../p-movement/p-movement.component';
     IonicModule,
     FolderPageRoutingModule
   ],
-  declarations: [FolderPage, ListComponent, GeolocationComponent, OrientationComponent, DraggableComponent, PMovementComponent],
-  providers: [Geolocation, ScreenOrientation]
+  declarations: [FolderPage, ListComponent, GeolocationComponent, OrientationComponent, DraggableComponent, PMovementComponent, CombinedComponent],
+  providers: [Geolocation, ScreenOrientation, Shake ]
 })
 export class FolderPageModule {}
