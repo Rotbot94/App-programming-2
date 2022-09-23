@@ -6,7 +6,7 @@ import { Shake } from '@ionic-native/shake/ngx';
   templateUrl: './combined.component.html',
   styleUrls: ['./combined.component.scss'],
 })
-export class CombinedComponent {
+export class CombinedComponent implements OnInit {
 
   boxStyle = 'box-default';
   active = false;
@@ -14,7 +14,7 @@ export class CombinedComponent {
   constructor(private shake: Shake) { }
 
   ngOnInit() {
-    const watch = this.shake.startWatch(100).subscribe(data => {
+      this.shake.startWatch(30).subscribe(data => {
       if(this.boxStyle === 'box-default') {
         this.boxStyle = 'box-moved';
       } else {

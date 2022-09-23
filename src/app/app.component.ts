@@ -11,7 +11,8 @@ export class AppComponent {
     { title: 'Orientation', url: '/folder/Orientation', icon: 'phone-landscape' },
     { title: 'Draggable', url: '/folder/Draggable', icon: 'move' },
     { title: 'Programmed Movement', url: '/folder/p-movement', icon: 'bicycle' },
-    { title: 'Touch/Sensor Movement', url: '/folder/Combined', icon: 'bonfire' },
+    { title: 'Asynkrone kald', url: '/folder/Async', icon: 'time' },
+    { title: 'Webapi', url: '/folder/Webapi', icon: 'trash' },
   ];
   constructor() {}
 }

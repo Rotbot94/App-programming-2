@@ -1,4 +1,4 @@
-<div class="flex flex-col ion-align-items-center">
+<div class="mt-10 flex flex-col ion-align-items-center">
   <ng-container class="mt-4" *ngIf="list?.length > 0; else noList">
     <ng-container *ngFor="let l of list">
       <li (click)="removeListItem(l)" class="hover:line-through">{{l[1]}}</li>

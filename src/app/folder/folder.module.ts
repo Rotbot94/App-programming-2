@@ -13,6 +13,8 @@ import {Geolocation} from '@ionic-native/geolocation/ngx';
 import {PMovementComponent} from '../p-movement/p-movement.component';
 import {CombinedComponent} from '../combined/combined.component';
 import { Shake } from '@ionic-native/shake/ngx';
+import {AsyncComponent} from "../async/async.component";
+import {WebapiComponent} from "../webapi/webapi.component";
 
 @NgModule({
   imports: [
@@ -20,8 +22,17 @@ import { Shake } from '@ionic-native/shake/ngx';
     FormsModule,
     IonicModule,
     FolderPageRoutingModule
+  ], declarations: [
+    FolderPage,
+    ListComponent,
+    GeolocationComponent,
+    OrientationComponent,
+    DraggableComponent,
+    PMovementComponent,
+    CombinedComponent,
+    AsyncComponent,
+    WebapiComponent
   ],
-  declarations: [FolderPage, ListComponent, GeolocationComponent, OrientationComponent, DraggableComponent, PMovementComponent, CombinedComponent],
   providers: [Geolocation, ScreenOrientation, Shake ]
 })
 export class FolderPageModule {}
