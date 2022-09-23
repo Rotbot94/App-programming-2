@@ -1,0 +1,10 @@
+.box-default{
+  background-color: #2dd36f;
+  transition: all 2s
+}
+
+.box-moved {
+  background-color: #cf3c4f;
+  transform: translateY(500px);
+  transition: all 2s
+}
